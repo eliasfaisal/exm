@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="form">
+            <div class="title">
+                <div class="text">الرجاء ملء اﻷماكن المطلوبة</div>
+            </div>
+            <div class="inputs">
+                <input type="number" placeholder="رقم الجلوس" id="studentID">
+                <input type="number" placeholder="رقم الإستمارة " id="reqID">
+                <select id="reqType" style="
+    color: #00000090;
+">
+                    <option selected>نوع التقديم</option>
+                    <option>أكاديمي</option>
+                    <option>فنون</option>
+                    <option>صناعي</option>
+                </select>
+                <select id="reqState" style="
+    color: #00000090;
+">
+                    <option selected>الولاية</option>
+                    <option>الخرطوم</option>
+                    <option>كسلا</option>
+                    <option>سنار</option>
+                    <option>عطبرة</option>
+                    <option>دنقلا</option>
+                    <option>اﻷبيض</option>
+                </select>
+            </div>
+            <div class="capcha_handl">
+                <div class="top">
+                    <div id="capcha">
+                        <div>------</div>
+                    </div>
+                    <div id="capcha_gen"></div>
+                </div>
+                <div class="bott">
+                    <input maxLength="6" spellcheck="false" placeholder="أدخل الكود الذي تراه" id="capchaConfirm">
+                </div>
+            </div>
+            <div class="go_handl">
+                <div id="reqGo">
+                    <div>بدأ التقديم</div>
+                </div>
+            </div>
+        </div>
+        <script charset='utf-8' src="index.js"></script>
+    </body>
+</html>

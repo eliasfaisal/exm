@@ -1,0 +1,151 @@
+/*@font-face {
+    font-family: 'SegoeUI';
+    font-style:normal;
+    src: url("segoeuil.ttf") format("truetype");
+}*/
+body {
+    background: hsl(0, 0%, 90%);
+}
+
+.form {
+    user-select: none;
+    width: 400px;
+    height: fit-content;
+    border: solid #0000003b 3px;
+    border-radius: 14px;
+    background: #fff;
+}
+
+.title {
+    width: -webkit-fill-available;
+    height: 50px;
+    display: flex;
+    margin: 11px 0;
+}
+
+.text {
+    color: #00000061;
+    width: -webkit-fill-available;
+    height: fit-content;
+    margin: auto 10px;
+    padding: 6px 35px;
+    border-radius: 6px;
+    background: #00000030;
+    text-align: center;
+}
+
+.inputs {
+    direction: rtl;
+    margin: 30px 10px 10px 10px;
+}
+
+#studentID,#reqID,#reqType,#reqState,#capchaConfirm {
+    transition: 300ms;
+    width: -webkit-fill-available;
+    margin: 5px 0;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: none;
+    background: #00000014;
+    font-size: 16px;
+}
+
+.capcha_handl {
+    width: -webkit-fill-available;
+}
+
+.capcha_handl>.top,.capcha_handl>.bott {
+    display: flex;
+}
+
+.capcha_handl>.bott {
+    margin: 5px 10px;
+}
+
+.capcha_handl>.top {
+    height: 60px;
+}
+
+#capcha {
+    height: -webkit-fill-available;
+    width: 200px;
+    background: #00000014;
+    border-radius: 4px;
+    margin: auto 5px auto auto;
+    display: flex;
+}
+
+#capcha>div {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+
+#capcha_gen {
+    transition: 150ms;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin: auto auto auto 0;
+    border-radius: 60px;
+    background: url('gen.svg') no-repeat #0000001f 8px 8px;
+}
+
+#capcha_gen:hover {
+    background-color: #0000003b;
+}
+
+#capcha_gen:active {
+    background-color: #0000004a;
+}
+
+#capchaConfirm {
+    text-align: center;
+    text-align: center;
+}
+
+.go_handl {
+    width: -webkit-fill-available;
+    height: fit-content;
+    margin: 15px 10px;
+    display: flex;
+}
+
+#reqGO {
+    transition: 150ms;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    background: #00b050;
+    border-radius: 6px;
+    display: flex;
+    margin: auto;
+    color: #fff;
+}
+
+#reqGO:hover {
+    background: #00c359;
+}
+
+#reqGO:active {
+    background: #00803a;
+}
+
+#reqGO>div {
+    margin: auto;
+}
+
+#studentID {
+}
+
+#reqID {
+}
+
+#reqType {
+}
+
+#reqState {
+}
